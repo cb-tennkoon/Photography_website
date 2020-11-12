@@ -7,13 +7,13 @@
         <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn text>
-            Home
+            <router-link to="/" style="text-decoration:none !important">Home</router-link>
           </v-btn>
           <v-btn text>
-            About
+            <router-link to="/about" style="text-decoration:none !important">About</router-link>
           </v-btn>
           <v-btn text>
-            Contact
+            <router-link to="/contact" style="text-decoration:none !important">Contact</router-link>
           </v-btn>
         </v-toolbar-items>
       </v-toolbar>

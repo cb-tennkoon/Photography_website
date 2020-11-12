@@ -4,11 +4,7 @@
       <Header/>
     </v-app-bar>
     <v-content class="content-padding" >
-      <Hero/>
-      
-      <Gallery/>
-
-      <LatestPost/>
+      <router-view></router-view>
       <Footer/>
     </v-content>
   </v-app>
@@ -16,9 +12,6 @@
 
 <script>
 import Header from './components/header';
-import Hero from './components/hero';
-import Gallery from './components/gallery';
-import LatestPost from './components/LatestPost';
 import Footer from './components/footer';
 
 export default {
@@ -26,9 +19,6 @@ export default {
 
   components: {
     Header,
-    Hero,
-    Gallery,
-    LatestPost,
     Footer
   },
 
