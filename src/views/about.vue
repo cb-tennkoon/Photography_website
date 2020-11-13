@@ -12,19 +12,19 @@
     </v-img>
     <v-container >
     <v-row justify="space-around">
-      <v-col cols="4">
+      <v-col cols="12" sm="6" md="4" >
         <v-img
           src="../assets/images/about/t2.jpeg"
           aspect-ratio="1.7"
         ></v-img>
       </v-col>  
-      <v-col cols="4">
+      <v-col cols="12" sm="6" md="4">
         <v-img
           src="../assets/images/about/t3.jpg"
           aspect-ratio="1.7"
         ></v-img>
       </v-col> 
-      <v-col cols="4">
+      <v-col cols="12" sm="6" md="4">
         <v-img
           src="../assets/images/about/t4.jpg"
           aspect-ratio="1.7"
@@ -146,6 +146,30 @@
         </v-col>
       </v-row>
     </div>
+  </v-container >
+    <v-container class="grey lighten-5" fluid>
+    <v-row
+      v-for="j in justify"
+      :key="j"
+      :justify="j"
+    >
+      <v-col
+        v-for="k in 2"
+        :key="k"
+        md="4"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+        <v-img
+          src="../assets/images/about/m3.jpg"
+          aspect-ratio="1"
+        ></v-img>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
   </v-content>
 
@@ -178,6 +202,25 @@
         },
         ],
         show: false,
+        justify: [
+        'start',
+        'center',
+        'end',
+        'space-around',
+        'space-between',
+      ],
+      images_res:[
+        'require("../assets/images/about/m1.jpg")',
+        'require("../assets/images/about/m2.jpg")',
+        'require("../assets/images/about/m3.jpg")',
+        'require("../assets/images/about/m4.jpg")',
+        'require("../assets/images/about/m5.jpg")',
+        'require("../assets/images/about/m6.jpg")',
+        'require("../assets/images/about/m7.jpg")',
+        'require("../assets/images/about/m8.jpg")',
+        'require("../assets/images/about/m9.jpg")',
+        'require("../assets/images/about/m10.jpg")',
+      ],
       }
     },
   }

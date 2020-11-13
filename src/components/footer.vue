@@ -1,7 +1,7 @@
 <template>
+<div class="">
 <v-footer
     padless
-    
   >
     <v-card
       class="flex blue-grey lighten-5"
@@ -31,7 +31,7 @@
       </v-card-text>
     </v-card>
 </v-footer>
-
+</div>
 </template>
 
 <script>

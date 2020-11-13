@@ -10,7 +10,7 @@
           align="center"
           justify="center"
         >
-          <div class="display-3">
+          <div class="display-3 hidden-xs-only">
             {{item.title}}
           </div>
       </v-row>
